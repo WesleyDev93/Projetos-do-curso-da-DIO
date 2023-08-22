@@ -15,13 +15,43 @@ console.log(pegaNumero1, pegaNumero2);
    
 
 
-function validaDados (input) {
+
+function ValidaDados() {
     
-    if () {
-        
+    if (input <= 0) {
+        alert("Escolha errada");
+        calculaDados();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+function calculaDados () {
+    
+    if (input == 1) {    
+        resultado = pegaNumero1 + pegaNumero2;
+    }else if (input == 2) {
+        resultado = pegaNumero1 - pegaNumero2;
+    }else if (input == 3) {
+        resultado = pegaNumero1 * pegaNumero2;
+    }else if (input == 4) {
+        resultado = pegaNumero1 ** pegaNumero2;
     }
 
+    console.log(resultado);
 
 }
 
-validaDados();
+
+
+
+calculaDados();
+ValidaDados ();
