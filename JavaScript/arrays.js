@@ -25,3 +25,4 @@ const input = Number(prompt("Digite o numero que sera incluido no array"));
 incluirDados(input);
 
 
+0
