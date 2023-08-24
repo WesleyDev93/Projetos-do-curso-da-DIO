@@ -2,6 +2,8 @@
 @import './components/corpo/corpo.css';
 
 
+
+
 @mixin fonte {
     box-sizing: border-box;
     font-family:  'ADLaM Display', cursive; 
@@ -9,7 +11,28 @@
 
 
 
-body {
+.secao {
     @include fonte;
+   height: 100vh;
     padding: 1rem;
+    width: 100vw;
 }
+
+
+
+
+
+// media queries
+@media screen and (min-width: 992px){
+    
+    .secao {
+        
+        border-radius: 1rem;
+        height: auto;
+        max-width: 992px;
+        margin: 1rem auto;
+    }
+}
+
+
+

@@ -27,9 +27,10 @@
     background-color: green;
     border-radius: 15px;
     color: black;
-    font-size: 0.825rem;
+    font-size: 0.625rem;
     margin: 0.25rem;
     padding: 0.25rem;
+    text-align: center;
     width: 50px;
     
   
@@ -38,7 +39,8 @@
 }
 
 
-.secao {
+
+
     .listaPoke {
 
         display: grid;                      // Tranforma em caixas pelo grid
@@ -81,22 +83,70 @@
         opacity: 50%;
         text-align: right;
     }
-    .detalhes {
 
+    .nome {
+
+        
+        color: black;
+        font-size: 0.9rem;
+        margin-bottom: .25rem;
+        text-transform: capitalize;
+    }
+
+    .detalhes {
+        align-items: center;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         margin: 0;
         padding: 0;
         
         
     }
     .tipos {
+        
 
         list-style: none;
+        margin: 0;
+        padding: 0;
         
     }
     .tipo {
       @include tipo;
 
     }
+
+// media queries
+
+
+
+@media  screen and (min-width: 378px){
+    
+    .listaPoke {
+        
+        grid-template-columns: 1fr 1fr  ;
+    }
+
+}
+
+
+
+@media  screen and (min-width: 576px){
+    
+    .listaPoke {
+        
+        grid-template-columns: 1fr 1fr 1fr  ;
+    }
+
+}
+
+
+
+@media  screen and (min-width: 992px){
+    
+    .listaPoke {
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
 }
