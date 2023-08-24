@@ -1,0 +1,6 @@
+@import './components/Titulo/titulo.css';
+@import './components/corpo/corpo.css';
+body {
+  font-family: "ADLaM Display", cursive;
+  padding: 1rem;
+}/*# sourceMappingURL=global.css.map */

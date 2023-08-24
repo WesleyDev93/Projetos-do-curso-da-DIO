@@ -1,0 +1,5 @@
+.secao .listaPoke {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}/*# sourceMappingURL=corpo.css.map */

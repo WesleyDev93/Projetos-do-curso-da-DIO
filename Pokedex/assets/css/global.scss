@@ -1,0 +1,15 @@
+@import './components/Titulo/titulo.css';
+@import './components/corpo/corpo.css';
+
+
+@mixin fonte {
+
+    font-family:  'ADLaM Display', cursive; 
+}
+
+
+
+body {
+    @include fonte;
+    padding: 1rem;
+}
