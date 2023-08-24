@@ -2,4 +2,83 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.secao .item1 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .item2 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .item3 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .item4 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .item5 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .item6 {
+  background-color: #74CB48;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.secao .imagem {
+  align-self: flex-end;
+  height: 100px;
+  max-width: 100%;
+  width: 160px;
+}
+.secao .numero {
+  color: black;
+  opacity: 50%;
+  text-align: right;
+}
+.secao .detalhes {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.secao .tipos {
+  list-style: none;
+}
+.secao .tipo {
+  background-color: green;
+  border-radius: 15px;
+  color: black;
+  font-size: 0.825rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  width: 50px;
 }/*# sourceMappingURL=corpo.css.map */

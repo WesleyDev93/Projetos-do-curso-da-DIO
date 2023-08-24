@@ -1,11 +1,102 @@
 
+@mixin itens {
+    
+    background-color:#74CB48;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 1rem;
+
+}
+
+
+@mixin imagem {
+    align-self: flex-end;
+    height: 100px;
+    max-width: 100%;
+    width: 160px;
+    
+}
+
+
+
+@mixin tipo {
+
+
+    background-color: green;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.825rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    width: 50px;
+    
+  
+
+
+}
+
+
 .secao {
     .listaPoke {
 
         display: grid;                      // Tranforma em caixas pelo grid
         grid-template-columns: 1fr 1fr;    // quer dizer 1 fração de espaço 50% para cada
         list-style: none;                  // retira os numeros da lista
+        margin:0 ;
+        padding: 0;
+    }
+    .item1 {
+         
+        @include itens;
 
+    }
+    .item2 {
+        @include itens;
+
+    }
+    .item3 {
+        @include itens;
+
+    }
+    .item4 {
+        @include itens;
+
+    }
+    .item5 {
+        @include itens;
+
+    }
+    .item6 {
+        @include itens;
+    }
+    .imagem {
+         @include imagem;
+         
+  
+    }
+    .numero {
+        color: black;
+        opacity: 50%;
+        text-align: right;
+    }
+    .detalhes {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .tipos {
+
+        list-style: none;
+        
+    }
+    .tipo {
+      @include tipo;
 
     }
 }
