@@ -1,0 +1,11 @@
+
+.secao {
+    .listaPoke {
+
+        display: grid;                      // Tranforma em caixas pelo grid
+        grid-template-columns: 1fr 1fr;    // quer dizer 1 fração de espaço 50% para cada
+        list-style: none;                  // retira os numeros da lista
+
+
+    }
+}
