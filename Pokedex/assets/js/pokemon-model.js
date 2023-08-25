@@ -1,7 +1,7 @@
 
 
 
-class pokemon {
+class Pokemon {
 
     numero;
     name;

@@ -4,7 +4,7 @@
 //}  não sera usado pois criamos uma Class , com os dados de acordo com nosso projeto
 
 function convertePokemonLI(pokemon) { // cria template da LI 
-     return `<li class="item1">
+     return `<li class="item1 ${pokemon.types}">
                 
      <span class="numero">${pokemon.numero}</span>
      <span class="nome">${pokemon.name}</span>
@@ -13,10 +13,10 @@ function convertePokemonLI(pokemon) { // cria template da LI
      <div class="detalhes">
          <ol class="tipos">
               
-            ${convertePokemonTypesOL(pokemon.types).join ('')}
+            ${pokemon.types.map((type) => `<li class="tipo" ${pokemon.types}>${type}</li>`).join ('')}
          </ol>
 
-         <img class="imagem" src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
+         <img class="imagem" src="${pokemon.foto}" alt="${pokemon.name}">
      </div>
      `
 
