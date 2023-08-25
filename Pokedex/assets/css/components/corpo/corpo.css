@@ -106,6 +106,25 @@
   width: 50px;
 }
 
+.paginacao {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.botaoCarrega {
+  background-color: #6f38f6;
+  border: none;
+  border-radius: 15px;
+  color: whitesmoke;
+  font-size: 0.825rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
 @media screen and (min-width: 378px) {
   .listaPoke {
     grid-template-columns: 1fr 1fr;
