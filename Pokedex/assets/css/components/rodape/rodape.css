@@ -1,0 +1,15 @@
+.rodape {
+  background-color: royalblue;
+  border: none;
+  border-radius: 15px;
+  font-family: "ADLaM Display", cursive;
+  font-weight: bold;
+  height: 25%;
+  text-align: center;
+  width: 25%;
+}
+
+.rodape {
+  position: relative;
+  left: 500px;
+}/*# sourceMappingURL=rodape.css.map */

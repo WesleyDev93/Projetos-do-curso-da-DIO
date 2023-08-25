@@ -6,8 +6,14 @@
 
 const pokemonOL = document.getElementById ('pokemonList') // pega pelo ID a ol pai
 const botao = document.getElementById ('carregarMais')// pega pelo ID o botao
-const limit = 5
+
+const maxRecords = 151
+const limit = 10
 let offset = 0
+
+
+
+// regra de paginação 
 
 
 
@@ -59,10 +65,26 @@ function carregarPokemonItens(offset, limit) {
 carregarPokemonItens (offset, limit)
 
 
-
+// evento do botao para sumir apos a paginação maxima estabelecida.
 botao.addEventListener ('click', () => {
     offset += limit
-    carregarPokemonItens (offset, limit)
+
+
+    const qtRecord = offset + limit
+
+
+    if (qtRecord >= maxRecords ) {
+        
+        const novoLimite =  maxRecords - offset
+        carregarPokemonItens (offset, limit)
+
+        botao.parentElement.removeChild (botao)
+    }else {
+        carregarPokemonItens (offset, limit)
+    }
+
+
+    
 }
 )
 
