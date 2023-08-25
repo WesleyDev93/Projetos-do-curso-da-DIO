@@ -1,5 +1,8 @@
 
 
+const offset = 0
+const limit = 10
+ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 
 
 function convertePokemonLI(pokemon) { // cria template da LI 
@@ -30,24 +33,14 @@ function convertePokemonLI(pokemon) { // cria template da LI
 
 
 
-fetch (url) // gera um processamento no servidor e uma resposta em promessa 
-
-.then ( (response) => { return response.json ()})   // convertendo em Json  => arrow function
-
-.then ( (jsonBody) => jsonBody.results)  // Body convertido 
-
-.then ((pokemonList) => {
+pokeAPI.getPokemons ().then ((pokemon) => {
     
     for (let i = 0; i < pokemonList.length; i++) {
     const pokemon = pokemonList[i]
     pokemonOL.innerHTML += convertePokemonLI(pokemon) // traz a lista para LI 
-
-
-    
-    
+   
 }})
-    
-.catch ( (erro) => {  console.log("Concluida") })  // tratamento de erros 
+   
      
-.finally ( () => {  console.log ("O serviço foi concluido")})  // mensagem final independente de erros
+
     
