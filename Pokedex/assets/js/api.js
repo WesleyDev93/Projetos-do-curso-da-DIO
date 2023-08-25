@@ -13,7 +13,7 @@ function convertePokemonLI(pokemon) { // cria template da LI
      <div class="detalhes">
          <ol class="tipos">
               
-            ${pokemon.types.map((type) => `<li class="tipo" ${pokemon.types}>${type}</li>`).join ('')}
+            ${pokemon.types.map((type) => `<li class="tipo ${pokemon.types}" >${type}</li>`).join ('')}
          </ol>
 
          <img class="imagem" src="${pokemon.foto}" alt="${pokemon.name}">

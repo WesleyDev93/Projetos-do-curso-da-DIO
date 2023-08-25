@@ -96,10 +96,10 @@
 }
 
 .tipo {
-  background-color: green;
   border-radius: 15px;
   color: black;
   font-size: 0.625rem;
+  filter: brightness(1.1);
   margin: 0.25rem;
   padding: 0.25rem;
   text-align: center;
