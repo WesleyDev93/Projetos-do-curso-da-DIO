@@ -9,7 +9,7 @@ pokeAPI.getPokemons = ( offset = 0, limit = 10 ) =>  {
 
 
     
-    fetch (url) // gera um processamento no servidor e uma resposta em promessa
+    return fetch (url) // gera um processamento no servidor e uma resposta em promessa
 
     .then ( (response) => { return response.json ()})   // convertendo em Json  => arrow function
 
