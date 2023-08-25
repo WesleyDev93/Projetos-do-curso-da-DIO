@@ -33,14 +33,21 @@ function convertePokemonLI(pokemon) { // cria template da LI
 
 
 
-pokeAPI.getPokemons ().then ((pokemon) => {
-    
+pokeAPI.getPokemons ().then ((pokemonList) => {
+
+    const listaItem = []
+
+    pokemon.map ()     //função transforma uma forma em outra forma 
+
     for (let i = 0; i < pokemonList.length; i++) {
     const pokemon = pokemonList[i]
-    pokemonOL.innerHTML += convertePokemonLI(pokemon) // traz a lista para LI 
+    listaItem.push (convertePokemonLI(pokemon)) // Converte diretamente a lista , carregando ela de uma vez.
    
-}})
-   
+    console.log (listaItem)
+
+}
+//pokemonOL.innerHTML += convertePokemonLI(pokemon) // traz a lista para LI -- retirado para nao recarregar toda vez
+})
      
 
     
