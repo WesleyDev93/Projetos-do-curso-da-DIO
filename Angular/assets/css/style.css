@@ -1,9 +1,77 @@
 *{
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 
 
+.container {
 
+}
+
+
+.card {
+
+
+    box-shadow: 10px 10px 10px transparent;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+
+}
+
+
+.cardLeft {
+
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cardLeft > h1 {
+
+    font-size: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+
+
+.cardLeft > p {
+
+ color:  gray;
+ padding-left: 10px;
+ text-align: center;
+ 
+
+
+}
+
+
+
+.cardLeft > span {
+
+
+    font-weight: 400;
+    text-align: center;
+   
+    
+ }
+
+ .carRight {
+
+
+    margin-left: 50px;
+ }
+
+.imagem {
+
+  
+     width: 300px;
+}
