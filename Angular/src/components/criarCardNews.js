@@ -27,6 +27,7 @@ class criarCardNews extends HTMLElement {
     // Construção dos elementos para depois coloca-los em ordem.
       const cardLeft = document.createElement ("div");
       const cardRight = document.createElement ("div");
+      const titulo = document.createElement ("h1");
       const span = document.createElement ("span");
       const p = document.createElement ("p");
       const imagem = document.createElement ("img");
@@ -39,6 +40,7 @@ class criarCardNews extends HTMLElement {
 
       ComponentRoot.appendChild (cardLeft)
       ComponentRoot.appendChild (cardRight)
+      cardLeft.appendChild(titulo)
       cardLeft.appendChild (span)
       cardLeft.appendChild (p)
       cardRight.appendChild (imagem)
@@ -54,8 +56,9 @@ class criarCardNews extends HTMLElement {
     // Setando o getAtributte para tornar os textos dinamicos
     // podemos usar o .href para links!
 
-     span.textContent = "desenvolvido por" + (this.getAttribute ("autor") || "Anonimo");
+     span.textContent =  (this.getAttribute ("autor") || "Anonimo");
      p.textContent = this.getAttribute ("texto")
+     titulo.textContent = "O imperio contrata!" || this.getAttribute ("titulo")
      imagem.src = this.getAttribute ("foto") ||  "#"
      imagem.alt = "Dart vader"
 
@@ -81,7 +84,7 @@ class criarCardNews extends HTMLElement {
         
         .card {
         
-        
+            background-color: whitesmoke;
             box-shadow: 10px 10px 10px transparent;
             display: flex;
             flex-direction: row;
