@@ -31,12 +31,24 @@ public class MinhaClasse {
         //Booleano verdadeiro ou falso
         boolean simNao = true;
 
+        // para numero gigantes distancia para SOL - o L  deve ser colocar ao final para indicar que é Long
+        long  numerosLongos =   11450780L;
+
+        // Deve ter o F apos o valor , para não achar que é um Doble - Float tambem é para uso Decimal
+        float pi = 3.14F;
+
+         // short usado para numeros até 30 mil - porem menos usado hoje - 
+         short numeroCurto = 1;
+
+
 
         // a variavel para ter valor imutavel recebe o seguinte metodo final e nome todo Maiusculo
 
         final String BR = "Brasil";
 
+        final double VALOR_DE_PI = 3.14;
 
+        
         // usando variavel para chamar valores pelo parametro
 
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
