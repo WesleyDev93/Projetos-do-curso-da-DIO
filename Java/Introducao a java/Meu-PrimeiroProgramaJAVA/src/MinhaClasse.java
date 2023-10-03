@@ -1,6 +1,5 @@
 // Nossa classe é executavel -A classe deve possuir o mesmo nome do arquivo.java
 
-import java.util.function.Function;
 
 public class MinhaClasse {
     
